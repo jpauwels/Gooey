@@ -165,7 +165,7 @@ class GooeyApplication(wx.Frame):
 
     def onCancel(self):
         """Close the program after confirming"""
-        if modals.confirmExit():
+        if not self.buildSpec['show_cancel_warning'] or modals.confirmExit():
             self.onClose()
 
 

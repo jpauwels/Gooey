@@ -46,6 +46,7 @@ def create_from_parser(parser, source_path, **kwargs):
       'run_validators':       kwargs.get('run_validators', True),
       'encoding':             kwargs.get('encoding', 'utf-8'),
       'show_stop_warning':    kwargs.get('show_stop_warning', True),
+      'show_cancel_warning':  kwargs.get('show_cancel_warning', True),
       'show_success_modal':   kwargs.get('show_success_modal', True),
       'show_failure_modal':   kwargs.get('show_failure_modal', True),
       'force_stop_is_error':  kwargs.get('force_stop_is_error', True),

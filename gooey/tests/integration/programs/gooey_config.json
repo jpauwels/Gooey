@@ -13,6 +13,7 @@
   "run_validators": true,
   "encoding": "utf-8",
   "show_stop_warning": true,
+  "show_cancel_warning": true,
   "show_success_modal": false,
   "force_stop_is_error": false,
   "poll_external_updates": false,
