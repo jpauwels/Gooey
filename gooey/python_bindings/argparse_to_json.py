@@ -281,7 +281,10 @@ def categorize(actions, widget_dict, options):
             yield action_to_json(action, _get_widget(action, 'FileSaver'), options)
 
         elif is_choice(action):
-            yield action_to_json(action, _get_widget(action, 'Dropdown'), options)
+            if action.nargs in (None, 1, '?'):
+                yield action_to_json(action, _get_widget(action, 'Dropdown'), options)
+            else:
+                yield action_to_json(action, _get_widget(action, 'Listbox'), options)
 
         elif is_flag(action):
             yield action_to_json(action, _get_widget(action, 'CheckBox'), options)
