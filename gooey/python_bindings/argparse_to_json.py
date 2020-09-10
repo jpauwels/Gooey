@@ -37,7 +37,8 @@ VALID_WIDGETS = (
     'MultiDirChooser',
     'Textarea',
     'PasswordField',
-    'Listbox'
+    'Listbox',
+    'CheckListbox',
 )
 
 
@@ -400,7 +401,7 @@ def build_radio_group(mutex_group, widget_group, options):
 
 
 def action_to_json(action, widget, options):
-    dropdown_types = {'Listbox', 'Dropdown', 'Counter'}
+    dropdown_types = {'Listbox', 'CheckListbox', 'Dropdown', 'Counter'}
     if action.required:
         # Text fields get a default check that user input is present
         # and not just spaces, dropdown types get a simplified

@@ -6,6 +6,7 @@ from .password import PasswordField
 from .command import CommandField
 from .dropdown import Dropdown
 from .listbox import Listbox
+from .checklistbox import CheckListbox
 from .checkbox import CheckBox
 from .checkbox import BlockCheckbox
 from .counter import Counter
